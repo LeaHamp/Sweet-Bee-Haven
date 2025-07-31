@@ -3,7 +3,7 @@ const translations = {
         home: "Home",
         about: "About Beekeeping",
         products: "Honey Products",
-        welcome: "Sweet Bee Haven - Oulu's Local Honey",
+        welcome: "Home Honey by Timo - Oulu's Local Honey",
         discover: "Experience the unique taste of honey from the Arctic Circle region",
         pureHoney: "Arctic Summer Honey",
         pureHoneyDesc: "Unique honey harvested under the midnight sun of Oulu",
@@ -51,13 +51,13 @@ const translations = {
         otherTopic: "Other",
         messageLabel: "Message:",
         sendMessage: "Send Message",
-        logoText: "Sweet Bee Haven"
+        logoText: "Home Honey by Timo"
     },
     fi: {
         home: "Etusivu",
         about: "Mehiläishoito",
         products: "Hunajatuotteet",
-        welcome: "Sweet Bee Haven - Oulun Paikallishunaja",
+        welcome: "Timon KotiHunaja - Oulun Paikallishunaja",
         discover: "Koe ainutlaatuinen napapiirin hunajan maku",
         pureHoney: "Arktinen Kesähunaja",
         pureHoneyDesc: "Ainutlaatuista hunajaa kerättynä Oulun keskiyön auringon alla",
@@ -105,7 +105,7 @@ const translations = {
         otherTopic: "Muu",
         messageLabel: "Viesti:",
         sendMessage: "Lähetä Viesti",
-        logoText: "Sweet Bee Haven"
+        logoText: "Timon KotiHunaja"
     }
 };
 
@@ -113,7 +113,8 @@ function changeLanguage(lang) {
     // Update active button state
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');
-        if (btn.textContent.toLowerCase() === lang.toUpperCase()) {
+        if ((lang === 'en' && btn.textContent === 'EN') || 
+            (lang === 'fi' && btn.textContent === 'FI')) {
             btn.classList.add('active');
         }
     });

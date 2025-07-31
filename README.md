@@ -1,9 +1,9 @@
-# Sweet Bee Haven - Oulu's Local Honey
+# Home Honey by Timo - Oulu's Local Honey
 
 A beautiful, responsive website for an Arctic beekeeping business in Oulu, Finland. This project showcases local honey products and beekeeping services with a modern, mobile-first design.
 
 ## 🌐 Live Site
-**Visit the website:** https://leahamp.github.io/Sweet-Bee-Haven
+**Visit the website:** https://leahamp.github.io/Home-Honey-by-Timo
 
 ## 🌟 Features
 
@@ -15,7 +15,7 @@ A beautiful, responsive website for an Arctic beekeeping business in Oulu, Finla
 
 ## 🍯 About the Project
 
-Sweet Bee Haven specializes in Arctic honey products from the Oulu region, near the Arctic Circle. The website features:
+Home Honey by Timo specializes in Arctic honey products from the Oulu region, near the Arctic Circle. The website features:
 
 - **Arctic Summer Honey**: Unique honey harvested under the midnight sun
 - **Northern Beekeeping Classes**: Specialized techniques for Arctic climate
