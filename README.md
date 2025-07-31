@@ -2,6 +2,9 @@
 
 A beautiful, responsive website for an Arctic beekeeping business in Oulu, Finland. This project showcases local honey products and beekeeping services with a modern, mobile-first design.
 
+## 🌐 Live Site
+**Visit the website:** https://leahamp.github.io/Sweet-Bee-Haven
+
 ## 🌟 Features
 
 - **Responsive Design**: Mobile-first approach that looks great on all devices
