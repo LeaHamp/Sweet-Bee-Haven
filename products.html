@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honey Products - Sweet Bee Haven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Beekeeping</a></li>
+                <li><a href="products.html" class="active">Honey Products</a></li>
+            </ul>
+        </nav>
+        <div class="language-switcher">
+            <button onclick="changeLanguage('en')" class="lang-btn active">EN</button>
+            <button onclick="changeLanguage('fi')" class="lang-btn">FI</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 data-translate="productsTitle">Oulu's Arctic Honey Collection</h1>
+            <p data-translate="productsDesc">Discover honey varieties unique to the Arctic Circle region</p>
+        </section>
+
+        <section class="products-grid">
+            <div class="product-card">
+                <img src="https://placehold.co/400x300?text=Midnight+Sun+Honey" alt="Midnight Sun Honey" class="product-image">
+                <div class="product-info">
+                    <h2 data-translate="summerHoney">Midnight Sun Honey</h2>
+                    <p data-translate="summerHoneyDesc">Our signature honey collected during Oulu's endless summer days. Uniquely light and aromatic due to the 24-hour daylight period.</p>
+                    <span class="price" data-translate="summerHoneyPrice">500g - 14€</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://placehold.co/400x300?text=Nordic+Forest+Honey" alt="Nordic Forest Honey" class="product-image">
+                <div class="product-info">
+                    <h2 data-translate="forestHoney">Nordic Forest Honey</h2>
+                    <p data-translate="forestHoneyDesc">Rich honey from Oulu's pristine forests, featuring notes of lingonberry, bilberry, and northern herbs.</p>
+                    <span class="price" data-translate="forestHoneyPrice">500g - 16€</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://placehold.co/400x300?text=Arctic+Creamed+Honey" alt="Arctic Creamed Honey" class="product-image">
+                <div class="product-info">
+                    <h2 data-translate="creamedHoney">Arctic Creamed Honey</h2>
+                    <p data-translate="creamedHoneyDesc">Our northern honey naturally crystallized into a smooth, creamy spread. Perfect for dark winter mornings.</p>
+                    <span class="price" data-translate="creamedHoneyPrice">400g - 12€</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://placehold.co/400x300?text=Arctic+Gift+Set" alt="Arctic Gift Set" class="product-image">
+                <div class="product-info">
+                    <h2 data-translate="giftSet">Arctic Honey Gift Set</h2>
+                    <p data-translate="giftSetDesc">A taste of the Arctic: three unique honey varieties from Oulu's diverse seasons.</p>
+                    <span class="price" data-translate="giftSetPrice">3x150g - 28€</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="honey-info">
+            <div class="info-card">
+                <h2 data-translate="qualityTitle">Arctic Quality Guarantee</h2>
+                <p data-translate="qualityDesc">Our honey is harvested from Oulu's pristine nature, far from industrial areas. Each jar contains pure, unfiltered northern honey.</p>
+            </div>
+            <div class="info-card">
+                <h2 data-translate="seasonalTitle">Northern Seasonal Cycle</h2>
+                <p data-translate="seasonalDesc">Our honey production follows the unique rhythm of Arctic seasons. Limited quantities available each season.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sweet Bee Haven. All rights reserved.</p>
+    </footer>
+
+    <script src="language.js"></script>
+</body>
+</html> 

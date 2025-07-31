@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Bee Haven - Oulu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <svg class="logo" width="50" height="50" viewBox="0 0 100 100">
+                <!-- Pine Tree Base Shape -->
+                <path d="M50 5 L20 85 L80 85 Z" fill="#1A1A1A" class="tree-base"/>
+                
+                <!-- Honeycomb Overlay Pattern -->
+                <g class="honeycomb-pattern">
+                    <path d="M50 15 L40 30 L40 45 L50 55 L60 45 L60 30 Z" fill="#FFA000" class="comb"/>
+                    <path d="M35 40 L25 55 L25 70 L35 80 L45 70 L45 55 Z" fill="#FFB74D" class="comb"/>
+                    <path d="M65 40 L55 55 L55 70 L65 80 L75 70 L75 55 Z" fill="#FFB74D" class="comb"/>
+                </g>
+                
+                <!-- Tree Trunk -->
+                <rect x="45" y="85" width="10" height="10" fill="#1A1A1A"/>
+                
+                <!-- Flying Bee -->
+                <g class="bee" transform="translate(15, 45) rotate(-30)">
+                    <ellipse cx="0" cy="0" rx="5" ry="3" fill="#FFA000"/>
+                    <ellipse cx="0" cy="0" rx="3" ry="2" fill="#1A1A1A"/>
+                    <!-- Wings -->
+                    <path d="M-1 -3 Q-3 -6 -1 -8 Q2 -7 0 -3" fill="#FFFFFF" opacity="0.6"/>
+                    <path d="M1 -3 Q3 -6 1 -8 Q-2 -7 0 -3" fill="#FFFFFF" opacity="0.6"/>
+                </g>
+                
+                <!-- Honey Drops -->
+                <path d="M30 82 Q32 88 34 82" fill="#FFA000" class="honey-drip"/>
+                <path d="M60 82 Q62 88 64 82" fill="#FFA000" class="honey-drip"/>
+            </svg>
+            <span class="logo-text" data-translate="logoText">Sweet Bee Haven</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active" data-translate="home">Home</a></li>
+                <li><a href="about.html" data-translate="about">About Beekeeping</a></li>
+                <li><a href="products.html" data-translate="products">Honey Products</a></li>
+            </ul>
+        </nav>
+        <div class="language-switcher">
+            <button onclick="changeLanguage('en')" class="lang-btn active">EN</button>
+            <button onclick="changeLanguage('fi')" class="lang-btn">FI</button>
+        </div>
+        <button class="contact-btn" onclick="openContactModal()" data-translate="contactUs">Contact Us</button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 data-translate="welcome">Sweet Bee Haven - Oulu's Local Honey</h1>
+                <p class="hero-text" data-translate="discover">Experience the unique taste of honey from the Arctic Circle region</p>
+                <a href="story.html" class="cta-button" data-translate="ourStory">Our Story</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://placehold.co/600x400?text=Arctic+Beekeeping" alt="Arctic Beekeeping" class="main-image">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <i class="fas fa-sun feature-icon"></i>
+                <h2 data-translate="pureHoney">Arctic Summer Honey</h2>
+                <p data-translate="pureHoneyDesc">Unique honey harvested under the midnight sun of Oulu</p>
+                <a href="products.html" class="learn-more">Learn More →</a>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-graduation-cap feature-icon"></i>
+                <h2 data-translate="classes">Northern Beekeeping</h2>
+                <p data-translate="classesDesc">Learn specialized beekeeping techniques for the Arctic climate</p>
+                <a href="about.html" class="learn-more">Learn More →</a>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-leaf feature-icon"></i>
+                <h2 data-translate="saveBees">Arctic Pollinators</h2>
+                <p data-translate="saveBeesDesc">Supporting bee populations in Northern Finland's unique ecosystem</p>
+                <a href="about.html" class="learn-more">Learn More →</a>
+            </div>
+        </section>
+
+        <section class="highlight-section">
+            <div class="highlight-content">
+                <h2 data-translate="seasonalHighlight">Seasonal Highlight</h2>
+                <p data-translate="seasonalDesc">Now harvesting: Midnight Sun Honey - Limited Summer Edition</p>
+                <a href="products.html" class="highlight-button" data-translate="shopNow">Shop Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@sweetbeehaven.fi</p>
+                <p>Tel: +358 XX XXX XXXX</p>
+            </div>
+            <div class="footer-section">
+                <h3>Location</h3>
+                <p>Oulu, Finland</p>
+                <p>Near the Arctic Circle</p>
+            </div>
+            <div class="footer-section social-links">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sweet Bee Haven. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeContactModal()">&times;</span>
+            <h2 data-translate="contactFormTitle">Contact Us</h2>
+            <form id="contactForm" onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label for="name" data-translate="nameLabel">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" data-translate="emailLabel">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="topic" data-translate="topicLabel">Topic:</label>
+                    <select id="topic" name="topic" required>
+                        <option value="" data-translate="selectTopic">Select a topic</option>
+                        <option value="order" data-translate="orderTopic">Order Inquiry</option>
+                        <option value="beekeeping" data-translate="beekeepingTopic">Beekeeping Classes</option>
+                        <option value="wholesale" data-translate="wholesaleTopic">Wholesale</option>
+                        <option value="other" data-translate="otherTopic">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message" data-translate="messageLabel">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn" data-translate="sendMessage">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="language.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("YOUR_PUBLIC_KEY"); // Add your Email.js public key here
+        })();
+    </script>
+    <script src="contact.js"></script>
+</body>
+</html> 
